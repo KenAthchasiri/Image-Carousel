@@ -1,0 +1,76 @@
+body{
+    background-color: #121312;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+}
+
+.image{
+    width: 720px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+.leftArrow{
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    font-size: 5rem;
+    z-index: 10;
+    cursor: pointer;
+}
+.leftArrow:hover{
+    color: orange;
+    transform: scale(1.10);
+}
+.leftArrow:active{
+    color: white;
+    transform: scale(1);
+}
+.rightArrow{
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    font-size: 5rem;
+    z-index: 10;
+    cursor: pointer;
+}
+.rightArrow:hover{
+    color: orange;
+    transform: scale(1.10);
+}
+.rightArrow:active{
+    color: white;
+    transform: scale(1);
+}
+
+
+
+
+.slide{
+    opacity: 0;
+    transition: 1s ease;
+}
+.slide.active{
+    opacity: 1;
+    transform: scale(1.08);
+    transition-duration: 1s;
+
+}
+.count{
+    position: absolute;
+    font-size: 28px;
+    bottom: 20px; 
+}
+
